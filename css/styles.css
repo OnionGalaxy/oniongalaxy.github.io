@@ -1,0 +1,79 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+
+    
+  }
+
+  /** Globals **/
+  body{
+      
+      background-color: rgb(236, 236, 236);
+      font-size: 62.5%;
+      font-family: 'PT Sans', sans-serif;
+    }
+img{
+    max-width: 100%;
+}
+  p{
+      font-size: 1.2rem;
+  }  
+  .container{
+        margin: 0 auto;
+        max-width: 1200px;
+  }
+
+  .center{
+      text-align: center;
+  }
+
+  /** header **/
+  .site-header{
+    
+    background-color: #3F3F3F; 
+    max-width: 100%;
+    font-size: 1.6rem;
+    padding: 1rem;
+    text-align: left;   
+    
+  }
+
+  .site-header p{
+      margin-top: 0;
+      color: white;
+  }
+
+
+  .site-header img{
+      width: 12%;
+      padding-left: 1rem;
+  }
+
+  .center{
+      text-align: center;
+  }
+  .nav-header{
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .nav-header a{
+    color: black;
+    font-size: 2rem;
+    margin: 1rem;
+    transition: color .3s ease-in-out;
+  }
+
+  .nav-header a:hover{
+      color: red;
+  }
+
+  .site-footer{
+    background-color: #3F3F3F; 
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 2rem 0;
+  }
+
