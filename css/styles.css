@@ -48,20 +48,17 @@ a p{
   font-size: 1.6rem;
   padding: 1rem;
 
+  text-align: left;
+
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  
 }
 
-.site-header p{
-    margin-top: 0;
-    color: white;
+.site-header img{ 
+  margin-left: 1rem;
 }
 
-
-.site-header img{
-    
-    margin-left: 1rem;
+img.logo{
+  margin-left:7rem;
 }
 
 .nav-header{
