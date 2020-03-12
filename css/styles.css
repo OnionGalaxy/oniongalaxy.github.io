@@ -2,9 +2,7 @@ html {
     box-sizing: border-box;
   }
 *, *:before, *:after {
-  box-sizing: inherit;
-
-  
+  box-sizing: inherit;  
 }
 
   /** Globals **/
@@ -64,6 +62,11 @@ img.logo{
 .nav-header{
   text-align: center;
   padding: 2rem 0;
+
+  color: #9c47fc;
+  display: block;
+  background: -webkit-linear-gradient(#fdf497, #fdf497, #fd5949, #d6249f, #285AEB);
+  -webkit-background-clip: text;
 }
 
 .nav-header a{
@@ -72,9 +75,13 @@ img.logo{
   padding: 0.2rem;
   margin: 1rem;
   transition: color .3s ease-in-out;
+  display: inline-flex;
 
 }
 
+.nav-header a:hover{
+  color: red;
+}
 
 .nav-header a.fb:hover{
   color: blue;
@@ -85,11 +92,9 @@ img.logo{
 }
 
 .nav-header a.ig:hover{
-  color: white;
-  height: 80%;
-  border-radius: 25%;
-  background: -webkit-linear-gradient(45deg, #fdf497, #fdf497, #fd5949, #d6249f, #285AEB  80%);
- 
+  color:transparent;
+  -webkit-text-fill-color: transparent;
+
 }
 
 
