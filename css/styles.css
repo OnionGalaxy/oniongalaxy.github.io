@@ -69,13 +69,32 @@ img.logo{
 .nav-header a{
   color: black;
   font-size: 2rem;
+  padding: 0.2rem;
   margin: 1rem;
   transition: color .3s ease-in-out;
+
 }
 
 .nav-header a:hover{
-    color: red;
+  color: red;
 }
+
+.nav-header a.fb:hover{
+  color: blue;
+}
+
+.nav-header a.tw:hover{
+  color: #1da1f2;
+}
+
+.nav-header a.ig:hover{
+  color: white;
+  height: 80%;
+  border-radius: 25%;
+  background: -webkit-linear-gradient(45deg, #fdf497, #fdf497, #fd5949, #d6249f, #285AEB  80%);
+ 
+}
+
 
 .site-footer{
   background-color: #3F3F3F; 
