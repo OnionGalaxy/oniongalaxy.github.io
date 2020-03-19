@@ -30,43 +30,78 @@ a p{
 }
 
 .container{
-      margin: 0 auto;
-      max-width: 1200px;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 .center{
-    text-align: center;
+  text-align: center;
 }
 
 /** header **/
 .site-header{
   
   background-color: #3F3F3F; 
-  
   font-size: 1.6rem;
-  padding: 1rem;
+  padding: 1rem 0 0 1rem;
 
-  text-align: left;
-
-  display: grid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .site-header img{ 
   margin-left: 1rem;
+
 }
 
 img.logo{
-  margin-left:7rem;
+  margin-left:3.9rem;
 }
 
-.nav-header{
+/** Navegation **/
+
+
+.nav-header ul{
+  list-style: none;
+  display:flex;
+  justify-content: space-between;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  align-items: center;
+  
+}
+
+.nav-header ul a{
+  text-decoration: none;
+  color:white;
+  text-transform: uppercase;
+  margin-right: 2rem;
+  transition: all .3s ease-in-out;
+
+}
+
+.nav-header ul a:hover{
+  text-decoration: underline;
+}
+
+.nav-header ul a.selected{
+  text-decoration: underline;
+}
+
+.nav-media{
   text-align: center;
   padding: 2rem 0;
-
   color: #9c47fc;
-  display: block;
-  background: -webkit-linear-gradient(#fdf497, #fdf497, #fd5949, #d6249f, #285AEB);
-  -webkit-background-clip: text;
+  display: grid;
+  justify-content: right;
+  align-items: center;
+ 
 }
 
 .head-a{
@@ -76,12 +111,12 @@ img.logo{
 }
 
 .head-a2{
-  width: 350px;
-  height: 150px;
-  margin-bottom: 20px;
+ 
+  width: 200px;
+ 
 }
 
-.nav-header a{
+.nav-media a{
   color: black;
   font-size: 2rem;
   padding: 0.2rem;
@@ -90,20 +125,33 @@ img.logo{
   display: inline-flex;
 
 }
-/**/
-.nav-header a:hover{
+
+/*Sticky stuff will be fixed at a certain position*/
+/*Adjust the last of all*/
+.sticky{
+  position:fixed;
+  top: 340px;
+  width:100%;
+}
+
+/* Hover effects */
+.nav-media a:hover{
   color: red;
 }
 
-.nav-header a.fb:hover{
+.nav-media a.fb:hover{
   color: blue;
 }
 
-.nav-header a.tw:hover{
+.nav-media a.tw:hover{
   color: #1da1f2;
 }
 
-.nav-header a.ig:hover{
+.nav-media a.ig{
+  background: -webkit-linear-gradient(#f5e96c, #fdf497, #fd5949, #d6249f, #285AEB);
+  -webkit-background-clip: text;
+}
+.nav-media a.ig:hover{
   transition: all .3s ease-in-out;
 
   color:transparent;
@@ -111,7 +159,41 @@ img.logo{
 
 }
 
+/* Main page content */
+.presentation{
+  margin: 8rem 0 7rem 1rem;
+  width: 300px;
+}
 
+/*Contacto*/
+
+.formulario-contacto{
+  padding: 5rem;
+  margin-top: 10rem;
+}
+
+.formulario-contacto .campo{
+  display: flex;
+  justify-content: space-between;
+  justify-content: left;
+  margin-bottom: .6rem;
+}
+
+.formulario-contacto .campo input,
+.formulario-contacto .campo textarea
+{
+  width: 30rem;
+}
+
+
+
+
+.col-50{
+  display:block;
+ 
+}
+
+/** Footer **/
 .site-footer{
   background-color: #3F3F3F; 
   text-align: center;
