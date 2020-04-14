@@ -31,6 +31,8 @@ a p{
 
 .container{
   margin: 0 auto;
+  max-width: 1500px;
+
   font-family: 'Montserrat', sans-serif;
 
 }
@@ -39,27 +41,37 @@ a p{
   text-align: center;
 }
 
+/* Bg image */
+.main-image{
+  position:relative;  
+  margin: 0;
+}
+
+.main-image img{
+  width:100%;
+}
+
 /** header **/
 .site-header{
-
-  position: sticky;
-  
-  background-color: rgba(160, 160, 160,0.5); 
+  position:absolute;
+  top:0;
+  left:0;
+  background-color: rgba(126, 126, 126, 0.5); 
   font-size: 1.6rem;
-  padding: 1rem 0;
+  padding: 1rem 0 0 0;
+
   display: flex;
+  width:100%;
   justify-content: space-between;
   align-items: center;
 }
+
 
 .site-header img{ 
   margin-left: 1rem;
 
 }
 
-img.logo{
-  margin-left:3.9rem;
-}
 
 /** Navegation **/
 
@@ -94,6 +106,7 @@ img.logo{
 
 .nav-media{
   text-align: center;
+  padding: 2rem 0;
   color: #9c47fc;
   display: grid;
   justify-content: right;
@@ -120,11 +133,15 @@ img.logo{
 /*Sticky stuff will be fixed at a certain position*/
 /*Adjust the last of all*/
 
-@media (min-width: 768px){
+.sticky{
+  display:none;
+}
+
+@media(min-width: 768px){
   .sticky{
+    display:block;
     position:fixed;
-    top: 700px;
-    
+    top: 340px;
     width:100%;
   }
 }
@@ -156,58 +173,46 @@ img.logo{
 }
 
 /* Main page content */
-.presentation{
-
-}
-
-.presentation-image{
-  display: flex;
-  background-image: url(../img/IMG_BACKGROUND.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  
-}
-
-.presentation-content{
-
+.game-presentation{
+  margin: 2rem 0 0 1rem;
+  position:absolute;
+  top: 3rem;
+  width: 33%;
   color: #e1e1e1;
 }
 
-@media(min-height: 768px){
-  .presentation-content{
-
+@media(min-width: 768px){
+  .game-presentation{
+    position:absolute;
+    top: 6rem;
+    margin: 2rem 0 0 1rem;
+    width: 33%;
     color: #e1e1e1;
   }
 }
 
-.project-description{
-  min-height: 100%;
-  padding: 1rem;
-}
-
-.width-33{
-  width: 33.3%;
-}
 /*Contacto*/
 
 .formulario-contacto{
-  padding: 5rem;
-  margin-top: 10rem;
+  padding: 10rem 1rem 1rem 1rem;
+  background-color: rgb(1, 82, 102);
+
 }
 
-.formulario-contacto .campo{
-  display: flex;
-  justify-content: space-between;
-  justify-content: left;
-  margin-bottom: .6rem;
+.campo{
+  display:grid;
+  grid-template-columns: 1fr 5fr;
+  margin-bottom: 1rem;
 }
 
-.formulario-contacto .campo input,
-.formulario-contacto .campo textarea
-{
-  width: 30rem;
+.campo label{
+  font-size: 1.3rem;
 }
+
+.campo input,
+.campo textarea{
+}
+
 
 .col-50{
   display:block;
@@ -216,11 +221,10 @@ img.logo{
 
 /** Footer **/
 .site-footer{
-  margin-top: -5px;
   background-color: #3F3F3F; 
   text-align: center;
   font-size: 1.4rem;
-  padding: 2.5rem 0;
+  padding: 2rem 0;
   color: white;
 }
 
