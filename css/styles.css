@@ -31,8 +31,6 @@ a p{
 
 .container{
   margin: 0 auto;
-  max-width: 1200px;
-
   font-family: 'Montserrat', sans-serif;
 
 }
@@ -43,11 +41,12 @@ a p{
 
 /** header **/
 .site-header{
-  
-  background-color: #3F3F3F; 
-  font-size: 1.6rem;
-  padding: 1rem 0 0 1rem;
 
+  position: sticky;
+  
+  background-color: rgba(160, 160, 160,0.5); 
+  font-size: 1.6rem;
+  padding: 1rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,7 +62,6 @@ img.logo{
 }
 
 /** Navegation **/
-
 
 .nav-header ul{
   list-style: none;
@@ -96,7 +94,6 @@ img.logo{
 
 .nav-media{
   text-align: center;
-  padding: 2rem 0;
   color: #9c47fc;
   display: grid;
   justify-content: right;
@@ -104,15 +101,9 @@ img.logo{
  
 }
 
-.head-a{
-  width: 50px;
-  height: 50px;
-  margin-left: 18px;
-}
-
 .head-a2{
  
-  width: 200px;
+  width: 100px;
  
 }
 
@@ -128,11 +119,16 @@ img.logo{
 
 /*Sticky stuff will be fixed at a certain position*/
 /*Adjust the last of all*/
-.sticky{
-  position:fixed;
-  top: 340px;
-  width:100%;
+
+@media (min-width: 768px){
+  .sticky{
+    position:fixed;
+    top: 700px;
+    
+    width:100%;
+  }
 }
+
 
 /* Hover effects */
 .nav-media a:hover{
@@ -161,10 +157,38 @@ img.logo{
 
 /* Main page content */
 .presentation{
-  margin: 8rem 0 7rem 1rem;
-  width: 300px;
+
 }
 
+.presentation-image{
+  display: flex;
+  background-image: url(../img/IMG_BACKGROUND.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  
+}
+
+.presentation-content{
+
+  color: #e1e1e1;
+}
+
+@media(min-height: 768px){
+  .presentation-content{
+
+    color: #e1e1e1;
+  }
+}
+
+.project-description{
+  min-height: 100%;
+  padding: 1rem;
+}
+
+.width-33{
+  width: 33.3%;
+}
 /*Contacto*/
 
 .formulario-contacto{
@@ -185,9 +209,6 @@ img.logo{
   width: 30rem;
 }
 
-
-
-
 .col-50{
   display:block;
  
@@ -195,10 +216,11 @@ img.logo{
 
 /** Footer **/
 .site-footer{
+  margin-top: -5px;
   background-color: #3F3F3F; 
   text-align: center;
   font-size: 1.4rem;
-  padding: 2rem 0;
+  padding: 2.5rem 0;
   color: white;
 }
 
