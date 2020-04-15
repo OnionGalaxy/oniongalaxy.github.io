@@ -80,6 +80,7 @@ a p{
 
 /** Navegation **/
 
+
 .nav-header ul{
   list-style: none;
   display:flex;
@@ -199,7 +200,8 @@ a p{
 
 .formulario-contacto{
   padding: 10rem 1rem 1rem 1rem;
-  background-color: rgb(1, 82, 102);
+  background-color: #102e38;
+  color: #e1e1e1;
 
 }
 
@@ -213,10 +215,14 @@ a p{
   font-size: 1.3rem;
 }
 
-.campo input,
-.campo textarea{
+.campo input{
+  height: 1.5rem;
+  width: 30rem;
 }
 
+.campo textarea{
+  width: 30rem;
+}
 
 .col-50{
   display:block;
