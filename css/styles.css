@@ -130,7 +130,7 @@ a p{
   color: #e1e1e1;
   font-size: 2rem;
   padding: 0.2rem;
-  margin: 1rem;
+  margin: 0.5rem;
   transition: all .3s ease-in-out;
   display: inline-flex;
 
@@ -183,15 +183,19 @@ a p{
   margin: 2rem 0 0 1rem;
   position:absolute;
   top: calc(50% - 5rem);
-  width: 33%;
+  width: 25%;
   color: #e1e1e1;
+}
+
+.game-presentation p{
+  font-size: 1.5rem;
 }
 
 @media(min-width: 768px){
   .main-image .game-presentation{
    align-self: center;
     margin: 2rem 0 0 1rem;
-    width: 33%;
+    width: 25%;
     color: #e1e1e1;
   }
 }
@@ -202,7 +206,7 @@ a p{
   padding: 10rem 1rem 1rem 1rem;
   background-color: #102e38;
   color: #e1e1e1;
-
+  padding-bottom: 30rem;
 }
 
 .campo{
@@ -242,5 +246,11 @@ a p{
   font-size: 1.4rem;
   padding: 2rem 0;
   color: white;
+}
+
+.button{
+  border: none;
+  font-weight: bold;
+  /*background-image: url(../img/onion.png);*/
 }
 
