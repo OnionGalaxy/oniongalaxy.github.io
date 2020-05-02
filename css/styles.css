@@ -58,9 +58,8 @@ a p{
 
 /** header **/
 .site-header{
-  position:absolute;
+  position:fixed;
   top:0;
-  left:0;
   background-color: rgba(126, 126, 126, 0.5); 
   font-size: 1.6rem;
   padding: 1rem 1rem 1rem 0.3rem;
