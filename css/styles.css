@@ -223,6 +223,10 @@ a p{
   width: 30rem;
 }
 
+.campo .message{
+  height: 20rem;
+}
+
 .campo textarea{
   width: 30rem;
 }
@@ -250,6 +254,7 @@ a p{
 .button{
   border: none;
   font-weight: bold;
+  padding: 0.8rem;
   /*background-image: url(../img/onion.png);*/
 }
 
