@@ -223,12 +223,9 @@ a p{
   width: 30rem;
 }
 
-.campo .message{
-  height: 20rem;
-}
-
 .campo textarea{
   width: 30rem;
+  height: 15rem;
 }
 
 .col-50{
