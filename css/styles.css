@@ -177,7 +177,7 @@ a p{
 
 }
 
-/* Main page content */
+/* LANDING PAGE */
 .game-presentation{
   margin: 2rem 0 0 1rem;
   position:absolute;
@@ -199,7 +199,7 @@ a p{
   }
 }
 
-/*Contacto*/
+/*CONTACT PAGE*/
 
 .formulario-contacto{
   padding: 10rem 1rem 1rem 1rem;
@@ -255,3 +255,56 @@ a p{
   /*background-image: url(../img/onion.png);*/
 }
 
+/* TEAM PAGE */
+
+.team-background{
+  position:relative;  
+  margin: 0;
+  background-color: #e1e1e1;
+}
+
+.leads-content{
+  max-width: 1200px;
+  margin: 0  auto;
+  padding-top: 6rem;
+}
+
+.leads-content h2{
+  margin-top: 2rem,
+}
+
+
+.team-content{
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leads
+{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 4rem;
+}
+
+
+.not-leads
+{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 4rem;
+}
+
+.dev{
+
+  padding:1rem 0;
+  margin: 1rem 0;
+  display:block;
+  text-align: center;
+  border: 1px solid black;
+
+}
+
+.dev img{
+  width:13rem;
+}
