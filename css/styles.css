@@ -203,7 +203,7 @@ a.ig:hover{
 .game-presentation{
   text-align: center;
 
-  margin: 10rem 35rem;
+  margin: 10rem 35rem 7rem 35rem;
   color: #e1e1e1;
 }
 
@@ -243,6 +243,10 @@ a.ig:hover{
     width: 25%;
     color: #e1e1e1;
   }
+}
+
+.video-container{
+  text-align: center;
 }
 
 /*CONTACT PAGE*/
