@@ -22,6 +22,7 @@ p{
 
 a{
   text-decoration: none;
+  color: white;
 }
 
 a p{
@@ -31,9 +32,7 @@ a p{
 .container{
   margin: 0 auto;
   max-width: 1500px;
-
   font-family: 'Montserrat', sans-serif;
-
 }
 
 .center{
@@ -72,9 +71,15 @@ a p{
 
 .site-header img{ 
   margin-left: 1rem;
-
 }
 
+.tsp
+{
+  position: absolute;
+  top:27rem;
+  left: 40rem;
+  width: 40rem;
+}
 
 /** Navegation **/
 
@@ -88,7 +93,6 @@ a p{
   font-weight: bold;
   font-size: 1rem;
   align-items: center;
-  
 }
 
 .nav-header ul a{
@@ -152,23 +156,36 @@ a p{
 
 
 /* Hover effects */
-.nav-media a:hover{
-  color: red;
+a:hover{
+  transition: all .3s ease-in-out;
+  
 }
 
-.nav-media a.fb:hover{
+a.fb:hover{
   color: blue;
 }
 
-.nav-media a.tw:hover{
+a.tw:hover{
   color: #1da1f2;
 }
 
-.nav-media a.ig{
+a.git:hover{
+  color:rgb(151, 60, 151);
+}
+
+a.lin:hover{
+  color: #1da1f2;
+}
+
+a.art:hover{
+  color: rgb(0, 153, 255);
+}
+
+a.ig{
   background: -webkit-linear-gradient(#f5e96c, #fdf497, #fd5949, #d6249f, #285AEB);
   -webkit-background-clip: text;
 }
-.nav-media a.ig:hover{
+a.ig:hover{
   transition: all .3s ease-in-out;
 
   color:transparent;
