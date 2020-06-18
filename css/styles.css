@@ -8,10 +8,9 @@ html {
   /** Globals **/
 body{
     
-    background-color: rgb(236, 236, 236);
+    background-color: #022b3d;
     font-size: 62.5%;
-    font-family: 'PT Sans', sans-serif;
-  }
+    font-family: 'Montserrat', sans-serif;  }
 
 img{
     max-width: 100%;
@@ -178,17 +177,47 @@ a p{
 }
 
 /* LANDING PAGE */
+
+.project-name{
+  position: absolute;
+  top: 30rem;
+}
+
 .game-presentation{
-  margin: 2rem 0 0 1rem;
-  position:absolute;
-  top: calc(50% - 5rem);
-  width: 25%;
+  text-align: center;
+
+  margin: 10rem 35rem;
   color: #e1e1e1;
 }
 
+.game-presentation img{
+  text-align: center;
+  width: 35rem;
+}
+
+
 .game-presentation p{
   font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
 }
+
+.game-presentation p.justified{
+  text-align: justify;
+  text-align-last: center;
+
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.game-presentation p.separated-text{
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+  font-weight: 700;
+}
+
+
 
 @media(min-width: 768px){
   .main-image .game-presentation{
@@ -203,7 +232,6 @@ a p{
 
 .formulario-contacto{
   padding: 10rem 1rem 1rem 1rem;
-  background-color: #102e38;
   color: #e1e1e1;
   padding-bottom: 30rem;
 }
@@ -260,12 +288,11 @@ a p{
 .team-background{
   position:relative;  
   margin: 0;
-  background-color: #e1e1e1;
 }
 
 .leads-content{
   max-width: 1200px;
-  margin: 0  auto;
+  margin: 8rem auto 4rem auto;
   padding-top: 6rem;
 }
 
@@ -285,14 +312,25 @@ a p{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 4rem;
+  margin-bottom: 10rem;
 }
 
+.section-name
+{
+  letter-spacing: 2px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
 
 .not-leads
 {
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 4rem;
+  margin-bottom: 10rem;
+
 }
 
 .dev{
@@ -301,10 +339,43 @@ a p{
   margin: 1rem 0;
   display:block;
   text-align: center;
-  border: 1px solid black;
-
 }
 
 .dev img{
-  width:13rem;
+  width:15rem;
+  margin: 0 0 1rem 0;
+}
+
+.dev p{
+  text-transform: uppercase;
+  color: white;
+
+  margin: 0.5rem 0 0 0.5rem;
+}
+
+
+.dev p.name,
+.dev p.surname
+{
+  font-weight: 700;
+  text-align: left;
+}
+
+.dev p.surname
+{
+  padding: 0;
+}
+
+.dev p.role
+{
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.dev p.icons
+{
+  text-align: left;
+
+  font-size: 2rem;
+  color: white;
 }
