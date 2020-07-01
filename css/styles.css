@@ -29,12 +29,6 @@ a p{
   text-decoration: none;
 }
 
-.container{
-  margin: 0 auto;
-  max-width: 1500px;
-  font-family: 'Montserrat', sans-serif;
-}
-
 .center{
   text-align: center;
 }
@@ -59,30 +53,27 @@ a p{
   position:fixed;
   top:0;
   background-color: rgba(126, 126, 126, 0.5); 
-  font-size: 1.6rem;
-  padding: 1rem 1rem 1rem 0.3rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.3rem;
 
   display: flex;
   width:100%;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
 }
 
+@media(min-width: 768px){
+  .site-header{
+    justify-content: space-between;
+
+  }
+}
 
 .site-header img{ 
   margin-left: 1rem;
-}
-
-.tsp
-{
-  position: absolute;
-  top:27rem;
-  left: 40rem;
-  width: 40rem;
+  width: 50%;
 }
 
 /** Navegation **/
-
 
 .nav-header ul{
   list-style: none;
@@ -92,16 +83,14 @@ a p{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 1rem;
-  align-items: center;
 }
 
 .nav-header ul a{
   text-decoration: none;
   color:white;
   text-transform: uppercase;
-  margin-right: 2rem;
+  margin-right: 1rem;
   transition: all .3s ease-in-out;
-
 }
 
 .nav-header ul a:hover{
@@ -195,23 +184,25 @@ a.ig:hover{
 
 /* LANDING PAGE */
 
-.project-name{
-  position: absolute;
-  top: 30rem;
-}
-
 .game-presentation{
   text-align: center;
 
-  margin: 10rem 35rem 7rem 35rem;
+  margin: 3rem 5rem;
   color: #e1e1e1;
+}
+
+@media (min-width:768px){
+
+  .game-presentation{
+  margin: 3rem 10rem;
+}
+
 }
 
 .game-presentation img{
   text-align: center;
   width: 35rem;
 }
-
 
 .game-presentation p{
   font-size: 1.5rem;
@@ -223,8 +214,15 @@ a.ig:hover{
   text-align: justify;
   text-align-last: center;
 
-  font-size: 1.5rem;
+  font-size: 0.75rem;
   line-height: 1.5;
+}
+
+@media (min-width: 768px){
+  .game-presentation p.justified{
+    
+    font-size: 1rem;
+  }
 }
 
 .game-presentation p.separated-text{
@@ -232,17 +230,6 @@ a.ig:hover{
   letter-spacing: 4px;
 
   font-weight: 700;
-}
-
-
-
-@media(min-width: 768px){
-  .main-image .game-presentation{
-   align-self: center;
-    margin: 2rem 0 0 1rem;
-    width: 25%;
-    color: #e1e1e1;
-  }
 }
 
 .video-container{
