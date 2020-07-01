@@ -289,7 +289,6 @@ a.ig:hover{
   border: none;
   font-weight: bold;
   padding: 0.8rem;
-  /*background-image: url(../img/onion.png);*/
 }
 
 /* TEAM PAGE */
@@ -319,9 +318,19 @@ a.ig:hover{
 .leads
 {
   display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4rem;
+  margin-bottom: 10rem;
+}
+
+@media (min-width: 768px){
+  .leads{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 4rem;
   margin-bottom: 10rem;
+  
+}
+
 }
 
 .section-name
@@ -333,12 +342,22 @@ a.ig:hover{
   text-transform: uppercase;
 }
 
+
 .not-leads
 {
   display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4rem;
+  margin-bottom: 10rem;
+  
+}
+
+@media (min-width: 768px){
+  .not-leads{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 4rem;
   margin-bottom: 10rem;
+}
 
 }
 
@@ -367,7 +386,17 @@ a.ig:hover{
 .dev p.surname
 {
   font-weight: 700;
-  text-align: left;
+  text-align: center;
+}
+
+@media (min-width: 768px){
+  .dev p.name,
+  .dev p.surname
+  {
+    text-align: left;
+    
+  }
+
 }
 
 .dev p.surname
@@ -377,14 +406,32 @@ a.ig:hover{
 
 .dev p.role
 {
-  text-align: left;
+  text-align: center;
   margin-top: 1rem;
+}
+
+@media (min-width: 768px){
+  .dev p.role
+  {
+    text-align: left;
+    
+  }
+
 }
 
 .dev p.icons
 {
-  text-align: left;
+  text-align: center;
 
   font-size: 2rem;
   color: white;
+}
+
+@media (min-width: 768px){
+  .dev p.icons
+  {
+    text-align: left;
+    
+  }
+
 }
