@@ -1,3 +1,10 @@
+:globals{
+  --parallax-perspective: 8px;
+}
+@function parallax-scale-factor($z-distance) {
+  @return ($parallax-perspective  -  $z-distance) / $parallax-perspective;
+}
+
 html {
     box-sizing: border-box;
   }
@@ -320,11 +327,8 @@ a.ig:hover{
 @media (min-width: 768px){
   .leads{
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 2rem;
   margin-bottom: 10rem;
-  
 }
-
 }
 
 .section-name
@@ -358,15 +362,15 @@ a.ig:hover{
 @media (min-width: 768px){
   .not-leads{
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 2rem;
     margin-bottom: 10rem;
-}
+  }
+
 
 }
 
 .dev{
 
-  margin:2rem 1rem;
+  padding:2rem 0.5rem;
   display:block;
   text-align: center;
 }
@@ -376,13 +380,19 @@ a.ig:hover{
   margin: 0 0 1rem 0;
 }
 
+@media (min-width: 768px){
+  .dev img{
+    width:100%;
+
+  }
+}
+
 .dev p{
   text-transform: uppercase;
   color: white;
   font-size: 1rem;
   margin: 0.5rem 0 0 0.5rem;
 }
-
 
 .dev p.name,
 .dev p.surname
@@ -437,3 +447,76 @@ a.ig:hover{
   }
 
 }
+
+/* PARALLAX EFFECT */
+.parallax-container{
+
+
+
+}
+
+.bg-image{
+ 
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/content/parallax/Landingpage_parallax_03.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.dirt-path-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 90%;
+  background:  url(../img/content/parallax/Landingpage_parallax_02.png) no-repeat 50% 50%;
+  background-size: cover;
+
+}
+
+.text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 90%;
+  background:  url(../img/content/parallax/Landingpage_parallax_05.png) no-repeat 50% 50%;
+  background-size: cover;
+
+}
+
+.front-grass {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 90%;
+  background:  url(../img/content/parallax/Landingpage_parallax_01.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.light-bulbs{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 90%;
+  background:  url(../img/content/parallax/Landingpage_parallax_04.png) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.whitespace {
+  width: 100%;
+  height: 70vh;
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 80px 0;
+  font-family: Helvetica;
+}
+
