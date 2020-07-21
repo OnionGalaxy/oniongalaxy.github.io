@@ -23,7 +23,6 @@
 <table>
   <tr>
   <td align="center"><a href="https://github.com/Kibium"><img src="https://avatars2.githubusercontent.com/u/24247683?v=4" width="100px;" alt=""/><br /><sub><b>Toni Ferrari Juan</b></sub></a><br /></td>
-
     <td align="center"><a href="https://github.com/mariofv"><img src="https://avatars2.githubusercontent.com/u/17348688?v=4" width="100px;" alt=""/><br /><sub><b>Mario Fernández Villalba</b></sub></a><br /></td>
   </tr>
 </table>
