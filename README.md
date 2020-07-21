@@ -1,6 +1,7 @@
 <h1 align="center" style="border-bottom: none;">
   <a href="https://github.com/OnionGalaxy/oniongalaxy.github.io/">Onion Galaxy Web</a>
 </h1>
+<h3 align="center">Onion Galaxy's website developed during the Master's Degree in AAA Videogames Development</h3>
 <p align="center">
   <a href="https://github.com/OnionGalaxy/oniongalaxy.github.io/releases/">
     <img alt="GitHub version" src="https://img.shields.io/github/v/release/OnionGalaxy/oniongalaxy.github.io?include_prereleases">
@@ -18,6 +19,8 @@
     <img alt="GitHub license" src="https://img.shields.io/github/license/OnionGalaxy/oniongalaxy.github.io.svg">
   </a>
 </p>
+
+![](https://github.com/OnionGalaxy/oniongalaxy.github.io/blob/master/assets/img/repo/repo_cover.png)
 
 ## Authors
 <table>
