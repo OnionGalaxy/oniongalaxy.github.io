@@ -1601,6 +1601,7 @@ section {
   padding: 30px;
   margin-bottom: 60px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  background-color: var(--secondary-bg-color);
 }
 
 .blog .entry .entry-img {
@@ -1648,7 +1649,7 @@ section {
 }
 
 .blog .entry .entry-meta a {
-  color: #5e5e5e;
+  color: var(--main-font-color);
   font-size: 14px;
   display: inline-block;
   line-height: 20px;
@@ -1984,6 +1985,7 @@ section {
   padding: 30px;
   margin: 0 0 60px 20px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  background-color: var(--secondary-bg-color);
 }
 
 .blog .sidebar .sidebar-title {
@@ -2043,7 +2045,7 @@ section {
 }
 
 .blog .sidebar .categories ul a {
-  color: #2b2b2b;
+  color: var(--main-font-color);
   transition: 0.3s;
 }
 
