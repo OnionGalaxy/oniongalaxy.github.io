@@ -25,8 +25,4 @@ navigation:
   url: /contact/
   site_tag: contact
 
-# Google-analytics
-google-analytics:
-  id: ""
-
 exclude: ['package.json', 'src' , 'node_modules']
