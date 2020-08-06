@@ -1,12 +1,14 @@
 ---
 layout: blog
 title: Blog
-permalink: /blog/
+permalink: /blog/general/
+sidebar_category: general
 ---
 <!-- ======= Blog Section ======= -->
 <!--Lets go!-->
 <div class="col-lg-8 entries">
   {% for post in site.posts %}
+  {% if post.categories contains "general" %}
   <article class="entry" data-aos="fade-up">
 
     <div class="entry-img">
@@ -31,6 +33,7 @@ permalink: /blog/
     </div>
 
   </article><!-- End blog entry -->
+  {% endif %}
   {% endfor %}
 
   <!--

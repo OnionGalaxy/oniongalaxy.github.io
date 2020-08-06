@@ -9,11 +9,21 @@ description: We are Onion Galaxy, a game development team formed by 21 students 
 email: oniongalaxy.studio@gmail.com
 github_username: OnionGalaxy
 
-# Collections
-collections:
-  blog:
-    output: true
-    permalink: /:collection/:path/
+permalink: /:categories/:title
+
+navigation:
+- text: Home
+  url: /
+  site_tag: home
+- text: Team
+  url: /team/
+  site_tag: team
+- text: Blog
+  url: /blog/
+  site_tag: blog
+- text: Contact
+  url: /contact/
+  site_tag: contact
 
 # Google-analytics
 google-analytics:

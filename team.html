@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Team | Onion Galaxy
-navbar_tag: Team
+title: Team
+permalink: /team/
 ---
 <main id="main">
 
@@ -36,7 +36,7 @@ navbar_tag: Team
             <div class="col-lg-3 col-md-6 align-items-stretch team-item {% if team_member.IS_PROGRAMMER == "TRUE" %} filter-programmer {% endif %} {% if team_member.IS_DESIGNER == "TRUE" %} filter-designer {% endif %} {% if team_member.IS_ARTIST == "TRUE" %} filter-artist {% endif %}">
               <div class="member" data-aos="fade-up">
                 <div class="member-img">
-                  <img src="assets/img/people/{{ team_member.IMG }}" class="img-fluid" alt="">
+                  <img src="{{ "assets/img/people/" | absolute_url}}{{ team_member.IMG }}" class="img-fluid" alt="">
                   <div class="social">
                     {% if team_member.TWITTER != "none" %}
                     <a href="https://twitter.com/{{ team_member.TWITTER }}"><i class="icofont-twitter"></i></a>

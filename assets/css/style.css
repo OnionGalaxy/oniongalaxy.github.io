@@ -2018,6 +2018,10 @@ section {
   transition: 0.3s;
 }
 
+.blog .sidebar .categories ul a.active {
+  color: var(--green-color);
+}
+
 .blog .sidebar .categories ul a:hover {
   color: var(--green-color);
 }
@@ -2044,7 +2048,7 @@ section {
 }
 
 .blog .sidebar .recent-posts h4 a {
-  color: black;
+  color: var(--main-font-color);
   transition: 0.3s;
 }
 
@@ -2057,7 +2061,7 @@ section {
   margin-left: 95px;
   font-style: italic;
   font-size: 14px;
-  color: #777777;
+  color: var(--main-font-color);
 }
 
 .blog .sidebar .tags {

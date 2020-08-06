@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+      {% include header.html %}
+      <main id="main">
+        <!-- ======= Breadcrumbs ======= -->
+        <section id="breadcrumbs" class="breadcrumbs">
+        </section><!-- End Breadcrumbs -->
+
+        <!-- ======= Blog Section ======= -->
+        <section id="blog" class="blog">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-lg-8 entries">
+                <article class="entry entry-single" data-aos="fade-up">
+
+                  <div class="entry-img">
+                    <img src="{{ "assets/img/blog/"| absolute_url }}{{ page.thumbnail }}" alt="" class="img-fluid">
+                  </div>
+
+                  <h2 class="entry-title">
+                    <a>{{ page.title }}</a>
+                  </h2>
+
+                  <div class="entry-meta">
+                    <ul>
+                      <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a><time datetime="2020-01-01"> {{ page.date | date_to_string }} </time></a></li>
+                    </ul>
+                  </div>
+
+                  <div class="entry-content">
+                    {{ content }}
+                    <p></p>
+                  </div>
+
+                  <div class="entry-footer clearfix">
+                    <div class="float-left">
+                      <i class="icofont-folder"></i>
+                      <ul class="cats">
+                        {% for category in page.categories %}
+                        {% if category != "blog" %}
+                        <li><a href="{{ "blog/" | absolute_url }}{{ category }}">{{ category | capitalize }}</a></li>
+                        {% endif %}
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </div>
+
+                </article><!-- End blog entry -->
+
+              </div><!-- End blog entries list -->
+
+              {% include blog_sidebar.html %}
+
+            </div>
+          </div>
+        </section><!-- End Blog Section -->
+      </main><!-- End #main -->
+      {% include footer.html %}
+  </body>
+</html>

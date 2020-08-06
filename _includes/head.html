@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} | Onion Galaxy</title>
   <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
@@ -15,19 +15,19 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="{{ "assets/vendor/bootstrap/css/bootstrap.min.css" | absolute_url}}" rel="stylesheet">
+  <link href="{{ "assets/vendor/icofont/icofont.min.css" | absolute_url}}" rel="stylesheet">
+  <link href="{{ "assets/vendor/boxicons/css/boxicons.min.css" | absolute_url}}" rel="stylesheet">
+  <link href="{{ "assets/vendor/animate.css/animate.min.css" | absolute_url}}" rel="stylesheet">
+  <link href="{{ "assets/vendor/venobox/venobox.css" | absolute_url}}" rel="stylesheet">
+  <link href="{{ "assets/vendor/owl.carousel/assets/owl.carousel.min.css" | absolute_url}}" rel="stylesheet">
+  <link href="{{ "assets/vendor/aos/aos.css" | absolute_url}}" rel="stylesheet">
+  <link href="{{ "assets/vendor/remixicon/remixicon.css" | absolute_url}}" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="{{ "assets/css/style.css" | absolute_url}}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Company - v2.1.0

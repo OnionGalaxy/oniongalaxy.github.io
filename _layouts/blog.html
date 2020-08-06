@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+      {% include header.html %}
+      <main id="main">
+        <!-- ======= Breadcrumbs ======= -->
+        <section id="breadcrumbs" class="breadcrumbs">
+        </section><!-- End Breadcrumbs -->
+
+        <section id="blog" class="blog">
+          <div class="container">
+            <div class="row">
+              {{ content }}
+              {% include blog_sidebar.html %}
+            </div>
+          </div>
+        </section><!-- End Blog Section -->
+      </main>
+      {% include footer.html %}
+  </body>
+</html>

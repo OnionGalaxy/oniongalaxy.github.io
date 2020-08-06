@@ -1,0 +1,32 @@
+<div class="col-lg-4">
+  <div class="sidebar" data-aos="fade-left">
+    <h3 class="sidebar-title">Categories</h3>
+
+    <div class="sidebar-item categories">
+      <ul>
+        {% for category in site.categories %}
+        {% assign active = nil %}
+        {% if page.sidebar_category == category[0] %}
+          {% assign active = 'active' %}
+        {% endif %}
+
+        {% if category[0] != "blog" %}
+        <li><a class="{{ active }}" href="{{ "blog/" | absolute_url }}{{category[0]}}">{{ category[0] | capitalize }} <span>({{ category[1].size }})</span></a></li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </div><!-- End sidebar categories-->
+
+    <h3 class="sidebar-title">Recent Posts</h3>
+    <div class="sidebar-item recent-posts">
+      {% for post in site.posts limit:5 %}
+      <div class="post-item clearfix">
+        <img src="{{ "assets/img/blog/" | absolute_url}}{{ post.thumbnail }}" alt="">
+        <h4><a href="{{ post.url | absolute_url}}">{{ post.title }}</a></h4>
+        <time datetime="2020-01-01"> {{ post.date | date_to_string }} </time>
+      </div>
+      {% endfor %}
+    </div><!-- End sidebar recent posts-->
+
+  </div><!-- End sidebar -->
+</div><!-- End blog sidebar -->
