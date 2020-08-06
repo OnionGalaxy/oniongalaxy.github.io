@@ -6,9 +6,9 @@
 
     <nav class="nav-menu d-none d-lg-block">
       <ul>
-        <li {% if navbar_tag == "Index" %} class="active" {% endif %}><a href="index.html">Home</a></li>
-        <li {% if navbar_tag == "Team" %} class="active" {% endif %}><a href="team.html">Team</a></li>
-        <li {% if navbar_tag == "Contact" %} class="active" {% endif %}><a href="contact.html">Contact</a></li>
+        <li {% if page.navbar_tag == "Index" %} class="active" {% endif %}><a href="index.html">Home</a></li>
+        <li {% if page.navbar_tag == "Team" %} class="active" {% endif %}><a href="team.html">Team</a></li>
+        <li {% if page.page.navbar_tag == "Contact" %} class="active" {% endif %}><a href="contact.html">Contact</a></li>
       </ul>
     </nav><!-- .nav-menu -->
   </div>
