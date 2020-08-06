@@ -1,0 +1,22 @@
+NAME,SURNAME,ROLE,TWITTER,INSTAGRAM,WEBPAGE,LINKEDIN,ARTSTATION,GIT,IMG,IS_PROGRAMMER,IS_DESIGNER,IS_ARTIST
+RICARD,VIVÓ MONTERO,PRODUCER,none,rickysomewhere,none,ricard-vivo-montero-83b049144,none,none,web_teampage_ricky.jpg,TRUE,TRUE,
+MARIO,FERNÁNDEZ VILLALBA,LEAD PROGRAMMER,none,none,https://mariofv.github.io/,mariofv,none,mariofv,web_teampage_mario.jpg,TRUE,,
+OMAR,RINAZ COSTA,LEAD ARTIST,orc_wave,wave_of_waves,none,omarrinazcosta,waveorc,none,web_teampage_omar.jpg,,,TRUE
+JORDI,ROMAGOSA MELLADO,LEAD DESIGNER,none,none,none,jordi-romagosa-mellado,none,JordiRomagosa,web_teampage_jordi-r.jpg,TRUE,TRUE,
+PAU,CASAS GARCÍA,PROGRAMMER,pacasasgar,pacasasgar,none,pau-casas-garcia-93773782,none,none,web_teampage_pau.jpg,TRUE,,
+JOÃO PEDRO DE NÓBREGA,PUPO CORREIA,ARTIST,revealjoaodnp,jppupo,https://cargocollective.com/joaoppupo,joão-de-nóbrega-pupo-077b0b75,none,none,web_teampage_joao.jpg,,,TRUE
+TONI,FERRARI JUAN,PROGRAMMER & DESIGNER,Artictoni,lordstonis,https://tonifj.github.io,toni-ferrari-juan-23966810b,none,none,web_teampage_toni.jpg,TRUE,TRUE,
+ARTEMIS,GEORGAKOPOULOU,PROGRAMMER,none,artemis21,none,artemis-georgakopoulou-978a69120,none,Misarte,web_teampage_artemis.jpg,TRUE,,
+JOAN,GINARD MATEO,PROGRAMMER,johnnyginard,none,https://joangm.itch.io,joangm,none,none,web_teampage_joan.jpg,TRUE,,
+RAÚL,GONZÁLEZ CEBRIÁN,PROGRAMMER & DESIGNER,none,none,none,raul-gonzalez-cebrian-a6a562180,raulgoce,raulgonzalezupc,web_teampage_raul.jpg,TRUE,TRUE,
+ENRIQUE ALEXANDRE,GONZÁLEZ SEQUEIRA,PROGRAMMER,none,none,https://dartemiss.github.io/MyPortfolio/,enrique-gonz%C3%A1lez-sequeira-167414176,none,Dartemiss,web_teampage_enrique.jpg,TRUE,,
+ANABEL,HERNÁNDEZ BARRERA,PROGRAMMER,none,none,none,ana-isabel-hern%C3%A1ndez-barrera-340889b9,none,none,web_teampage_anabel.jpg,TRUE,,
+PÁVEL GUSTAVO,JESÚS SEGUIL,ARTIST,none,none,none,p%C3%A1vel-jes%C3%BAs-seguil-8723901a1,pavel_js,none,web_teampage_pavel.jpg,,,TRUE
+IRENE,MARCUELLO GALLARDO,ARTIST,none,irenemarcuello,none,irene-marcuello-gallardo,none,none,web_teampage_irene.jpg,,,TRUE
+ENRIC,MARTORELL PONS,ARTIST,none,none,none,none,none,none,web_teampage_enric.jpg,,,TRUE
+VIDAL,MELERO IGLESIAS,PROGRAMMER,none,none,none,none,none,vidalmelero,web_teampage_vidal.jpg,TRUE,,
+LUIS CARLOS,MOYANO MEDINA,PROGRAMMER,none,none,none,luis-carlos-m-28319a176,none,none,web_teampage_luis.jpg,TRUE,,
+MARCO,RODRÍGUEZ QUINTO,PROGRAMMER,none,none,none,marco-rodriguez-b1b21515a,none,marcorod94,web_teampage_marco.jpg,TRUE,,
+JORDI,SAURAS SALAS,PROGRAMMER & DESIGNER,none,none,https://jorxss.github.io/,jordisauras,none,Jorxss,web_teampage_jordi-s.jpg,TRUE,TRUE,
+TUDOR-ALEXANDRU,STANESCU,ARTIST,none,none,none,none,none,none,web_teampage_tudor.jpg,,,TRUE
+GERARD ANDREU,TOLEDANO BENABARRE,ARTIST,none,none,none,gerard-toledano-70b85659,none,none,web_teampage_gerard.jpg,,,TRUE

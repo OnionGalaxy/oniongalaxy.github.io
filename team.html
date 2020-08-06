@@ -1,65 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Team | Onion Galaxy</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/content/marketing_logo_white.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Company - v2.1.0
-  * Template URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-  <div class="container d-flex align-items-center">
-
-    <!-- Uncomment below if you prefer to use an image logo -->
-    <a href="index.html" class="logo mr-auto"><img src="assets/img/content/marketing_logo_white.png" alt="" class="img-fluid"></a>
-
-    <nav class="nav-menu d-none d-lg-block">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="team.html">Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
-  </div>
-</header><!-- End Header -->
-
-
-  <main id="main">
+---
+layout: default
+title: Team | Onion Galaxy
+navbar_tag: Team
+---
+<main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
@@ -88,424 +32,42 @@
 
         <div class="row team-container" data-aos="fade-up">
 
-          <div class="col-lg-3 col-md-6 align-items-stretch team-item filter-programmer filter-designer">
-            <div class="member" data-aos="fade-up">
-              <div class="member-img">
-                <img src="assets/img/people/web_teampage_ricky.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href="https://www.instagram.com/rickysomewhere/"><i class="icofont-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/ricard-vivo-montero-83b049144/"><i class="icofont-linkedin"></i></a>
+          {% for team_member in site.data.team %}
+            <div class="col-lg-3 col-md-6 align-items-stretch team-item {% if team_member.IS_PROGRAMMER == "TRUE" %} filter-programmer {% endif %} {% if team_member.IS_DESIGNER == "TRUE" %} filter-designer {% endif %} {% if team_member.IS_ARTIST == "TRUE" %} filter-artist {% endif %}">
+              <div class="member" data-aos="fade-up">
+                <div class="member-img">
+                  <img src="assets/img/people/{{ team_member.IMG }}" class="img-fluid" alt="">
+                  <div class="social">
+                    {% if team_member.TWITTER != "none" %}
+                    <a href="https://twitter.com/{{ team_member.TWITTER }}"><i class="icofont-twitter"></i></a>
+                    {% endif %}
+                    {% if team_member.INSTAGRAM != "none" %}
+                    <a href="https://www.instagram.com/{{ team_member.INSTAGRAM }}"><i class="icofont-instagram"></i></a>
+                    {% endif %}
+                    {% if team_member.GIT != "none" %}
+                    <a href="https://github.com/{{ team_member.GIT }}"><i class="bx bxl-github"></i></a>
+                    {% endif %}
+                    {% if team_member.LINKEDIN != "none" %}
+                    <a href="https://www.linkedin.com/in/{{ team_member.LINKEDIN }}"><i class="icofont-linkedin"></i></a>
+                    {% endif %}
+                    {% if team_member.ARTSTATION != "none" %}
+                    <a href="https://www.artstation.com/{{ team_member.ARTSTATION }}/"><i class="fab fa-artstation"></i></a>
+                    {% endif %}
+                    {% if team_member.WEBPAGE != "none" %}
+                    <a href="{{ team_member.WEBPAGE }}"><i class="icofont-user"></i></a>
+                    {% endif %}
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>{{ team_member.NAME }}</h4>
+                  <h4>{{ team_member.SURNAME }}</h4>
+                  <span>{{ team_member.ROLE }}</span>
                 </div>
               </div>
-              <div class="member-info">
-                <h4>RICARD</h4>
-                <h4>VIVÓ MONTERO</h4>
-                <span>PRODUCER</span>
-              </div>
             </div>
-          </div>
+         {% endfor %}
 
-          <div class="col-lg-3 col-md-6 align-items-stretch team-item filter-programmer">
-            <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <div class="member-img">
-                <img src="assets/img/people/web_teampage_mario.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href="https://github.com/mariofv"><i class="bx bxl-github"></i></a>
-                  <a href="https://www.linkedin.com/in/mariofv/"><i class="icofont-linkedin"></i></a>
-                  <a href="https://mariofv.github.io/"><i class="icofont-user"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>MARIO</h4>
-                <h4> FERNÁNDEZ VILLALBA</h4>
-                <span>LEAD PROGRAMMER</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 align-items-stretch team-item filter-artist">
-            <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="member-img">
-                <img src="assets/img/people/web_teampage_omar.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href="https://twitter.com/orc_wave"><i class="icofont-twitter"></i></a>
-                  <a href="https://www.instagram.com/wave_of_waves/"><i class="icofont-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/omarrinazcosta/"><i class="icofont-linkedin"></i></a>
-                  <a href="https://www.artstation.com/waveorc/"><i class="fab fa-artstation"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>OMAR</h4>
-                <h4>RINAZ COSTA</h4>
-                <span>LEAD ARTIST</span>
-              </div>
-            </div>
-          </div>
-
-        <div class="col-lg-3 col-md-6 align-items-stretch team-item filter-designer filter-programmer">
-          <div class="member" data-aos="fade-up" data-aos-delay="100">
-            <div class="member-img">
-              <img src="assets/img/people/web_teampage_jordi-r.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href="https://github.com/JordiRomagosa"><i class="bx bxl-github"></i></a>
-                <a href="https://www.linkedin.com/in/jordi-romagosa-mellado/"><i class="icofont-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>JORDI</h4>
-              <h4>ROMAGOSA MELLADO</h4>
-              <span>LEAD DESIGNER</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- ============================= -->
-
-        <div class="col-lg-3 col-md-6 align-items-stretch team-item filter-programmer">
-          <div class="member" data-aos="fade-up">
-            <div class="member-img">
-              <img src="assets/img/people/web_teampage_pau.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href="https://twitter.com/pacasasgar"><i class="icofont-twitter"></i></a>
-                <a href="https://www.instagram.com/pacasasgar/"><i class="icofont-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/pau-casas-garcia-93773782/"><i class="icofont-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>PAU</h4>
-              <h4>CASAS GARCÍA</h4>
-              <span>PROGRAMMER</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 align-items-stretch team-item filter-artist">
-          <div class="member" data-aos="fade-up" data-aos-delay="100">
-            <div class="member-img">
-              <img src="assets/img/people/web_teampage_joao.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href="https://twitter.com/revealjoaodnp"><i class="icofont-twitter"></i></a>
-                <a href="https://www.instagram.com/jppupo/"><i class="icofont-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/joão-de-nóbrega-pupo-077b0b75/"><i class="icofont-linkedin"></i></a>
-                <a href="https://cargocollective.com/joaoppupo"><i class="icofont-user"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>JOÃO PEDRO DE NÓBREGA</h4>
-              <h4>PUPO CORREIA</h4>
-              <span>ARTIST</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 align-items-stretch team-item filter-designer filter-programmer">
-          <div class="member" data-aos="fade-up" data-aos-delay="300">
-            <div class="member-img">
-              <img src="assets/img/people/web_teampage_toni.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href="https://twitter.com/Artictoni"><i class="icofont-twitter"></i></a>
-                <a href="https://www.instagram.com/lordstonis/"><i class="icofont-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/toni-ferrari-juan-23966810b/"><i class="icofont-linkedin"></i></a>
-                <a href="https://tonifj.github.io"><i class="icofont-user"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>TONI</h4>
-              <h4>FERRARI JUAN</h4>
-              <span>PROGRAMMER & DESIGNER</span>
-            </div>
-          </div>
-        </div>
-
-      <div class="col-lg-3 col-md-6 align-items-stretch team-item filter-programmer">
-        <div class="member" data-aos="fade-up" data-aos-delay="100">
-          <div class="member-img">
-            <img src="assets/img/people/web_teampage_artemis.jpg" class="img-fluid" alt="">
-            <div class="social">
-              <a href="https://www.instagram.com/artemis21/"><i class="icofont-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/artemis-georgakopoulou-978a69120/"><i class="icofont-linkedin"></i></a>
-              <a href="https://github.com/Misarte"><i class="bx bxl-github"></i></a>
-            </div>
-          </div>
-          <div class="member-info">
-            <h4>ARTEMIS</h4>
-            <h4>GEORGAKOPOULOU</h4>
-            <span>PROGRAMMER</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- ============================= -->
-
-      <div class="col-lg-3 col-md-6 align-items-stretch team-item filter-programmer">
-        <div class="member" data-aos="fade-up">
-          <div class="member-img">
-            <img src="assets/img/people/web_teampage_joan.jpg" class="img-fluid" alt="">
-            <div class="social">
-              <a href="https://twitter.com/johnnyginard"><i class="icofont-twitter"></i></a>
-              <a href="https://www.linkedin.com/in/joangm/"><i class="icofont-linkedin"></i></a>
-              <a href="https://joangm.itch.io/"><i class="fab fa-itch-io"></i></a>
-            </div>
-          </div>
-          <div class="member-info">
-            <h4>JOAN</h4>
-            <h4>GINARD MATEO</h4>
-            <span>PROGRAMMER</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 align-items-stretch team-item filter-programmer filter-designer">
-        <div class="member" data-aos="fade-up" data-aos-delay="100">
-          <div class="member-img">
-            <img src="assets/img/people/web_teampage_raul.jpg" class="img-fluid" alt="">
-            <div class="social">
-              <a href="https://www.linkedin.com/in/raul-gonzalez-cebrian-a6a562180/"><i class="icofont-linkedin"></i></a>
-              <a href="https://github.com/raulgonzalezupc"><i class="fab fa-github"></i></a>
-              <a href="https://www.artstation.com/raulgoce/"><i class="fab fa-artstation"></i></a>
-            </div>
-          </div>
-          <div class="member-info">
-            <h4>RAÚL</h4>
-            <h4>GONZÁLEZ CEBRIÁN</h4>
-            <span>PROGRAMMER & DESIGNER</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 align-items-stretch team-item filter-programmer">
-        <div class="member" data-aos="fade-up" data-aos-delay="300">
-          <div class="member-img">
-            <img src="assets/img/people/web_teampage_enrique.jpg" class="img-fluid" alt="">
-            <div class="social">
-              <a href="https://www.linkedin.com/in/enrique-gonz%C3%A1lez-sequeira-167414176//"><i class="icofont-linkedin"></i></a>
-              <a href="https://github.com/Dartemiss"><i class="fab fa-github"></i></a>
-              <a href="https://dartemiss.github.io/MyPortfolio/"><i class="icofont-user"></i></a>
-            </div>
-          </div>
-          <div class="member-info">
-            <h4>ENRIQUE ALEXANDRE</h4>
-            <h4>GONZÁLEZ SEQUEIRA</h4>
-            <span>PROGRAMMER</span>
-          </div>
-        </div>
-      </div>
-
-    <div class="col-lg-3 col-md-6 align-items-stretch team-item filter-programmer">
-      <div class="member" data-aos="fade-up" data-aos-delay="100">
-        <div class="member-img">
-          <img src="assets/img/people/web_teampage_anabel.jpg" class="img-fluid" alt="">
-          <div class="social">
-            <a href="https://www.linkedin.com/in/ana-isabel-hern%C3%A1ndez-barrera-340889b9/"><i class="icofont-linkedin"></i></a>
-          </div>
-        </div>
-        <div class="member-info">
-          <h4>ANABEL</h4>
-          <h4>HERNÁNDEZ BARRERA</h4>
-          <span>PROGRAMMER</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ============================= -->
-
-    <div class="col-lg-3 col-md-6 align-items-stretch team-item filter-artist">
-      <div class="member" data-aos="fade-up">
-        <div class="member-img">
-          <img src="assets/img/people/web_teampage_pavel.jpg" class="img-fluid" alt="">
-          <div class="social">
-            <a href="https://www.linkedin.com/in/p%C3%A1vel-jes%C3%BAs-seguil-8723901a1/"><i class="icofont-linkedin"></i></a>
-            <a href="https://www.artstation.com/pavel_js/"><i class="fab fa-artstation"></i></a>
-          </div>
-        </div>
-        <div class="member-info">
-          <h4>PÁVEL GUSTAVO</h4>
-          <h4>JESÚS SEGUIL</h4>
-          <span>ARTIST</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6 align-items-stretch team-item filter-artist">
-      <div class="member" data-aos="fade-up" data-aos-delay="100">
-        <div class="member-img">
-          <img src="assets/img/people/web_teampage_irene.jpg" class="img-fluid" alt="">
-          <div class="social">
-            <a href="https://www.instagram.com/irenemarcuello/"><i class="icofont-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/irene-marcuello-gallardo/"><i class="icofont-linkedin"></i></a>
-          </div>
-        </div>
-        <div class="member-info">
-          <h4>IRENE</h4>
-          <h4>MARCUELLO GALLARDO</h4>
-          <span>ARTIST</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6 align-items-stretch team-item filter-artist">
-      <div class="member" data-aos="fade-up" data-aos-delay="300">
-        <div class="member-img">
-          <img src="assets/img/people/web_teampage_enric.jpg" class="img-fluid" alt="">
-          <div class="social">
-          </div>
-        </div>
-        <div class="member-info">
-          <h4>ENRIC</h4>
-          <h4>MARTORELL PONS</h4>
-          <span>ARTIST</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6 align-items-stretch team-item filter-programmer">
-    <div class="member" data-aos="fade-up" data-aos-delay="100">
-      <div class="member-img">
-        <img src="assets/img/people/web_teampage_vidal.jpg" class="img-fluid" alt="">
-        <div class="social">
-          <a href="https://github.com/vidalmelero"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-      <div class="member-info">
-        <h4>VIDAL</h4>
-        <h4>MELERO IGLESIAS</h4>
-        <span>PROGRAMMER</span>
-      </div>
-    </div>
-    </div>
-
-    <!-- ============================= -->
-
-    <div class="col-lg-3 col-md-6 align-items-stretch team-item filter-programmer">
-      <div class="member" data-aos="fade-up">
-        <div class="member-img">
-          <img src="assets/img/people/web_teampage_luis.jpg" class="img-fluid" alt="">
-          <div class="social">
-            <a href="https://www.linkedin.com/in/luis-carlos-m-28319a176/"><i class="icofont-linkedin"></i></a>
-          </div>
-        </div>
-        <div class="member-info">
-          <h4>LUIS CARLOS</h4>
-          <h4>MOYANO MEDINA</h4>
-          <span>PROGRAMMER</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6 align-items-stretch team-item filter-programmer">
-      <div class="member" data-aos="fade-up" data-aos-delay="100">
-        <div class="member-img">
-          <img src="assets/img/people/web_teampage_marco.jpg" class="img-fluid" alt="">
-          <div class="social">
-            <a href="https://www.linkedin.com/in/marco-rodriguez-b1b21515a/"><i class="icofont-linkedin"></i></a>
-            <a href="https://github.com/marcorod94"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
-        <div class="member-info">
-          <h4>MARCO</h4>
-          <h4>RODRÍGUEZ QUINTO</h4>
-          <span>PROGRAMMER</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6 align-items-stretch team-item filter-programmer filter-designer">
-      <div class="member" data-aos="fade-up" data-aos-delay="300">
-        <div class="member-img">
-          <img src="assets/img/people/web_teampage_jordi-s.jpg" class="img-fluid" alt="">
-          <div class="social">
-            <a href="https://www.linkedin.com/in/jordisauras/"><i class="icofont-linkedin"></i></a>
-            <a href="https://github.com/Jorxss"><i class="fab fa-github"></i></a>
-            <a href="https://jorxss.github.io/"><i class="icofont-user"></i></a>
-          </div>
-        </div>
-        <div class="member-info">
-          <h4>JORDI</h4>
-          <h4>SAURAS SALAS</h4>
-          <span>PROGRAMMER & DESIGNER</span>
-        </div>
-      </div>
-    </div>
-
-  <div class="col-lg-3 col-md-6 align-items-stretch team-item filter-artist">
-    <div class="member" data-aos="fade-up" data-aos-delay="100">
-      <div class="member-img">
-        <img src="assets/img/people/web_teampage_tudor.jpg" class="img-fluid" alt="">
-        <div class="social">
-        </div>
-      </div>
-      <div class="member-info">
-        <h4>TUDOR-ALEXANDRU</h4>
-        <h4>STANESCU</h4>
-        <span>ARTIST</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ============================= -->
-
-  <div class="col-lg-3 col-md-6 align-items-stretch team-item filter-artist">
-    <div class="member" data-aos="fade-up">
-      <div class="member-img">
-        <img src="assets/img/people/web_teampage_gerard.jpg" class="img-fluid" alt="">
-        <div class="social">
-          <a href="https://www.linkedin.com/in/gerard-toledano-70b85659/"><i class="icofont-linkedin"></i></a>
-        </div>
-      </div>
-      <div class="member-info">
-        <h4>GERARD ANDREU</h4>
-        <h4>TOLEDANO BENABARRE</h4>
-        <span>ARTIST</span>
-      </div>
-    </div>
-  </div>
-
-<!-- ============================= -->
       </div>
     </section><!-- End Our Team Section -->
 
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-
-
-    <div class="container d-md-flex py-4">
-
-      <div class="mr-md-auto text-center text-md-left">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Onion Galaxy</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/company-free-html-bootstrap-template/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+</main><!-- End #main -->
