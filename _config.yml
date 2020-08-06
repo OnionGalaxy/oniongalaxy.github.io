@@ -14,9 +14,6 @@ collections:
   blog:
     output: true
     permalink: /:collection/:path/
-  team:
-    output: true
-    permalink: /:collection/:path/
 
 # Google-analytics
 google-analytics:
