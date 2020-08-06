@@ -32,6 +32,7 @@
 
 ## Built With
 * [GitHub Pages](https://pages.github.com/) - Used to host the web.
+* [Jekyll](https://jekyllrb.com/) - Used to generate the web.
 * [Bootstrapmade](https://bootstrapmade.com/) - Used as template.
 
 ## License
