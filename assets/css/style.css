@@ -2258,3 +2258,31 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
+.sticky {
+  display:none;
+}
+
+@media(min-width: 768px) {
+  .sticky {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 30px;
+    height: 100px;
+    width: 20px;
+    z-index: 3000;
+    padding: 0;
+    display:block;
+  }
+}
+
+.sticky-index {
+  color: var(--main-font-color);
+  font-size:2em;
+}
+
+.sticky-index:hover {
+ color: var(--green-color);
+}
