@@ -56,9 +56,18 @@
 
   // Mobile Navigation
   if ($('.nav-menu').length) {
+    $('.header-social-links').toggle();
+
     var $mobile_nav = $('.nav-menu').clone().prop({
       class: 'mobile-nav d-lg-none'
     });
+
+    if ($mobile_nav.find('.header-social-links').length)
+    {
+      $mobile_nav.find('.header-social-links').toggle();
+    }
+
+
     $('body').append($mobile_nav);
     $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
     $('body').append('<div class="mobile-nav-overly"></div>');

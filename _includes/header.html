@@ -16,6 +16,29 @@
         <li class="{{ active }}"><a href="{{ nav.url | absolute_url }}">{{ nav.text }}</a></li>
         {% endfor %}
       </ul>
+
+      <div id="social-links-header" class="header-social-links">
+        {% if site.linkedin != "" %}
+        <a href="{{ site.linkedin }}" class="mobile-social-link"><i class="fab fa-linkedin"></i></a>
+        {% endif %}
+
+        {% if site.twitter != "" %}
+        <a href="{{ site.twitter }}" class="mobile-social-link"><i class="fab fa-twitter-square"></i></a>
+        {% endif %}
+
+        {% if site.facebook != "" %}
+        <a href="{{ site.facebook }}" class="mobile-social-link"><i class="fab fa-facebook-square"></i></a>
+        {% endif %}
+
+        {% if site.instagram != "" %}
+        <a href="{{ site.instagram }}" class="mobile-social-link"><i class="fab fa-instagram"></i></a>
+        {% endif %}
+
+        {% if site.github != "" %}
+        <a href="{{ site.github }}" class="mobile-social-link"><i class="fab fa-github-square"></i></a>
+        {% endif %}
+      </div>
     </nav><!-- .nav-menu -->
+
   </div>
 </header><!-- End Header -->

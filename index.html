@@ -53,9 +53,25 @@ title: Twinlight Souls
 
   <section>
       <div class="sticky">
-        <a class="sticky-index" href="https://www.instagram.com/oniongalaxy/?hl=es"> <i class="fab fa-instagram"></i></a>
-        <a class="sticky-index" href="https://www.facebook.com/pg/oniongalaxy/about/?ref=page_internal"><i class="fab fa-facebook-square"></i></a>
-        <a class="sticky-index" href="https://twitter.com/galaxy_onion"><i class="fab fa-twitter-square"></i></a>
+        {% if site.linkedin != "" %}
+        <a class="sticky-index" href="{{ site.linkedin }}"><i class="fab fa-linkedin"></i></a>
+        {% endif %}
+
+        {% if site.twitter != "" %}
+        <a class="sticky-index" href="{{ site.twitter }}"><i class="fab fa-twitter-square"></i></a>
+        {% endif %}
+
+        {% if site.facebook != "" %}
+        <a class="sticky-index" href="{{ site.facebook }}"><i class="fab fa-facebook-square"></i></a>
+        {% endif %}
+
+        {% if site.instagram != "" %}
+        <a class="sticky-index" href="{{ site.instagram }}"> <i class="fab fa-instagram"></i></a>
+        {% endif %}
+
+        {% if site.github != "" %}
+        <a class="sticky-index" href="{{ site.github }}"> <i class="fab fa-github-square"></i></a>
+        {% endif %}
      </div>
   </section>
 

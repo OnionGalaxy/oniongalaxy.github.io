@@ -266,13 +266,22 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none;
 }
 
+.mobile-nav ul {
+  margin: 20px 20px;
+  padding: 0;
+  list-style: none;
+}
+
 .mobile-nav a {
   display: block;
   position: relative;
   color: var(--main-font-color);
   padding: 10px 20px;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 2px;
   outline: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
@@ -336,8 +345,8 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 .header-social-links {
   padding-left: 14px;
-  margin-left: 20px;
-  border-left: 1px solid #c4c4c4;
+  margin-left: 40px;
+  margin-top: 100px;
 }
 
 .header-social-links a {
@@ -355,7 +364,6 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   .header-social-links {
     padding: 0 48px 0 0;
-    border-left: 0;
   }
 }
 
@@ -2263,7 +2271,7 @@ section {
   display:none;
 }
 
-@media(min-width: 768px) {
+@media(min-width: 992px) {
   .sticky {
     position: fixed;
     top: 0;
@@ -2285,4 +2293,8 @@ section {
 
 .sticky-index:hover {
  color: var(--green-color);
+}
+
+.mobile-social-link {
+  font-size: 1.5em;
 }

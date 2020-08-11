@@ -7,7 +7,11 @@ description: We are Onion Galaxy, a game development team formed by 21 students 
 
 # User settings
 email: oniongalaxy.studio@gmail.com
-github_username: OnionGalaxy
+github: https://github.com/OnionGalaxy/
+linkedin: https://www.linkedin.com/company/onion-galaxy/
+instagram: https://www.instagram.com/oniongalaxy/
+facebook: https://www.facebook.com/pg/oniongalaxy/
+twitter: https://twitter.com/galaxy_onion/
 
 permalink: /:categories/:title
 
