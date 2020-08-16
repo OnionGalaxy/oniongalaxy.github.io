@@ -910,6 +910,21 @@ section {
   color: var(--green-color);
 }
 
+.engine-title {
+    position:absolute;
+    top:40%;
+    height:auto;
+    max-height:120px;
+    left:10%;
+    text-align:left;
+}
+
+@media (max-width: 768px) {
+  .engine-title{
+    top: 25%;
+  }
+}
+
 .about-us .content p:last-child {
   margin-bottom: 0;
 }
