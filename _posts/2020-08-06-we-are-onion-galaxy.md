@@ -4,6 +4,7 @@ title: We are Onion Galaxy team
 thumbnail: blog_post-01.jpg
 site_tag: blog
 excerpt_separator: <!--more-->
+categories: general
 ---
 Hi!
 

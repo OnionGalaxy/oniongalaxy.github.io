@@ -15,7 +15,15 @@
 
   --main-bg-color: #022B3D;
   --secondary-bg-color: #023A52;
+  /*
 
+  --main-font-color: #022B3D;
+  --secondary-font-color: #023A52;
+  --highlight-font-color: #28FFE3;
+
+  --main-bg-color: #FFFFFF;
+  --secondary-bg-color: #FAFAFA;
+*/
   --green-color: #2DB58F;
   --highlight-green-color: #28FFE3
 }
@@ -535,7 +543,7 @@ section {
 }
 
 .section-bg {
-  background-color: #023A52;
+  background-color: var(--secondary-bg-color);
 }
 
 .section-title {
@@ -683,6 +691,11 @@ section {
 
 .engine-feature-ul {
   flex-direction: row;
+}
+
+.engine-feature-img {
+   margin-top: auto;
+   margin-bottom: auto;
 }
 
 /*--------------------------------------------------------------
@@ -1666,7 +1679,7 @@ section {
 
 .blog .entry .entry-content blockquote {
   overflow: hidden;
-  background-color: #fafafa;
+  background-color: var(--main-bg-color);
   padding: 60px;
   position: relative;
   text-align: center;

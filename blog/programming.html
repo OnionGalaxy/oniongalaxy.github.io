@@ -1,0 +1,51 @@
+---
+layout: blog
+title: Blog
+permalink: /blog/programming/
+site_tag: blog
+sidebar_category: programming
+---
+<!-- ======= Blog Section ======= -->
+<!--Lets go!-->
+<div class="col-lg-8 entries">
+  {% for post in site.posts %}
+  {% if post.categories contains "programming" %}
+  <article class="entry" data-aos="fade-up">
+
+    <div class="entry-img">
+      <img src="{{ "assets/img/blog/" | absolute_url}}{{ post.thumbnail }}" alt="" class="img-fluid">
+    </div>
+
+    <h2 class="entry-title">
+      <a href="{{ post.url | absolute_url}}">{{ post.title }}</a>
+    </h2>
+
+    <div class="entry-meta">
+      <ul>
+        <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a><time datetime="2020-01-01"> {{ post.date | date_to_string }} </time></a></li>
+      </ul>
+    </div>
+
+    <div class="entry-content">
+      <p> {{ post.excerpt }} </p>
+      <div class="read-more">
+        <a href="{{ post.url | absolute_url}}">Read More</a>
+      </div>
+    </div>
+
+  </article><!-- End blog entry -->
+  {% endif %}
+  {% endfor %}
+
+  <!--
+  <div class="blog-pagination">
+    <ul class="justify-content-center">
+      <li class="disabled"><i class="icofont-rounded-left"></i></li>
+      <li><a href="#">1</a></li>
+      <li class="active"><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#"><i class="icofont-rounded-right"></i></a></li>
+    </ul>
+  </div>
+-->
+</div><!-- End blog entries list -->
