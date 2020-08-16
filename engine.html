@@ -117,7 +117,7 @@ permalink: /engine/
 
 
       <div class="row content">
-        <div class="col-xl-6" data-aos="zoom-in">
+        <div class="col-lg-6" data-aos="zoom-in">
           <a href="{{ "assets/img/engine/editor.png" | absolute_url}}" data-gall="engine-gallery" class="venobox preview-link" title="Little Orion Engine layout"><img src="{{ "assets/img/engine/editor.png" | absolute_url}}" class="img-fluid" alt="Engine Thumbnail"></i></a>
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up">
@@ -125,16 +125,26 @@ permalink: /engine/
             <h2>EDITOR</h2>
           </div>
           <p>
-            Little Orion Engine gives developers full control over the game creation, featuring an array of efficient tools that enable rapid iteration during the development of game worlds.
+            <b>LITTLE ORION ENGINE</b> gives developers full control over the game creation, featuring an array of efficient tools that enable rapid iteration during the development of game worlds.
             <br><br>
-            The engine core revolves around GameObjects and Entity-Components-System pattern. The GameObjects are placed in a Eucli
+            The engine core revolves around GameObjects and Entity-Components-System pattern. The GameObjects are placed in an Euclidean space that allow multiple geometric transformations.
+            <br><br>
+            Also, <b>LITTLE ORION ENGINE</b> has an automatized Assets importing pipeline, that can convert from multiple asset formats to our own formats.
           </p>
-          <ul>
-            <li><i class="ri-check-double-line"></i> GameObject Hierarchy</li>
-            <li><i class="ri-check-double-line"></i> ECS</li>
-            <li><i class="ri-check-double-line"></i> Assets importing pipeline</li>
-            <li><i class="ri-check-double-line"></i> Guizmos </li>
+
+          <ul class="list-group row engine-feature-ul" >
+            <div class="col-sm-6" >
+              <li><i class="ri-check-double-line"></i> GameObject Hierarchy</li>
+              <li><i class="ri-check-double-line"></i> ECS</li>
+              <li><i class="ri-check-double-line"></i> Assets importing pipeline</li>
+            </div>
+            <div class="col-sm-6" >
+                <li><i class="ri-check-double-line"></i> Guizmos </li>
+                <li><i class="ri-check-double-line"></i> Serialization </li>
+                <li><i class="ri-check-double-line"></i> Space Partitioning </li>
+            </div>
           </ul>
+
         </div>
       </div>
 
@@ -150,15 +160,27 @@ permalink: /engine/
             <h2>Visuals</h2>
           </div>
           <p>
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum
+             <b>LITTLE ORION ENGINE</b> allows rendering using PBR (Physic Based Rendering) lighnintg system. A benefit of applying physically based models
+             is that fewer parameters are required to achieve effects, leading to a more streamlined and approachable content creation workflow.
+             <br><br>
+             Developers can use a powerful built-in shader system, that allows full customization of rendering pipeline and the implementation of custom effects.
+             <br><br>
+             Also several effects are available to make more impactfull scenes, like particle systems, trails, ...
           </p>
-          <ul>
-            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequa</li>
-            <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</li>
+
+          <ul class="list-group row engine-feature-ul" >
+            <div class="col-sm-6" >
+              <li><i class="ri-check-double-line"></i> Physically Based Rendering</li>
+              <li><i class="ri-check-double-line"></i> Shader customization</li>
+              <li><i class="ri-check-double-line"></i> Per-Object Shadow Maps</li>
+            </div>
+            <div class="col-sm-6" >
+                <li><i class="ri-check-double-line"></i> Particle Effect Systems </li>
+                <li><i class="ri-check-double-line"></i> Trails </li>
+                <li><i class="ri-check-double-line"></i> Lightmaps </li>
+            </div>
           </ul>
+
         </div>
 
         <div class="col-lg-6" data-aos="zoom-in">
@@ -183,15 +205,20 @@ permalink: /engine/
             <h2>Audio</h2>
           </div>
           <p>
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum
+            <b>LITTLE ORION ENGINE</b> integrates WWise API, allowing the importation of WWise soundbanks.
+            <br><br>
+            Also, it supports 3D audio sources and listeners, dynamic volume, ...
           </p>
-          <ul>
-            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequa</li>
-            <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</li>
+
+          <ul class="list-group row engine-feature-ul" >
+            <div class="col-sm-6" >
+              <li><i class="ri-check-double-line"></i> WWise Integration</li>
+              <li><i class="ri-check-double-line"></i> 3D Spatial Audio</li>
+            </div>
+            <div class="col-sm-6" >
+            </div>
           </ul>
+
         </div>
       </div>
 
@@ -207,15 +234,26 @@ permalink: /engine/
             <h2>Scripting</h2>
           </div>
           <p>
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum
+            <b>LITTLE ORION ENGINE</b> is purely build in C++, which also includes scripting. The engine implements its own API, that allows users
+            to use <b>LITTLE ORION ENGINE</b> funcionalities in their projects.
+            <br><br>
+            After that, the system imports all the scripts via a .dll file (dynamic library). This allows Hot Reloading, a technique used to reload libraries
+            in execution time.
+            <br><br>
+            Further more, it also implements automatic generation and compilation of scripts to boost development iterations.
+
           </p>
-          <ul>
-            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequa</li>
-            <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</li>
+
+          <ul class="list-group row engine-feature-ul" >
+            <div class="col-sm-6" >
+              <li><i class="ri-check-double-line"></i> C++ Scripting</li>
+              <li><i class="ri-check-double-line"></i> Hot Reloading</li>
+              <li><i class="ri-check-double-line"></i> Automatic compilation </li>
+            </div>
+            <div class="col-sm-6" >
+            </div>
           </ul>
+
         </div>
 
         <div class="col-lg-6" data-aos="zoom-in">
@@ -240,15 +278,21 @@ permalink: /engine/
             <h2>Animation</h2>
           </div>
           <p>
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum
+            <b>LITTLE ORION ENGINE</b> brings imported meshes to live via Skinning Mesh Animations, that can be imported from different softwares (Maya, 3DMax, ...).
+            <br><br>
+            This animations can be organized easily in a State Machine, that implements graph hierarchies with customizable transistions between nodes.
           </p>
-          <ul>
-            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequa</li>
-            <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</li>
+
+          <ul class="list-group row engine-feature-ul" >
+            <div class="col-sm-6" >
+              <li><i class="ri-check-double-line"></i> State Machine Editor </li>
+              <li><i class="ri-check-double-line"></i> Animation Blending </li>
+              <li><i class="ri-check-double-line"></i> Cuistomizable Transitions</li>
+            </div>
+            <div class="col-sm-6" >
+            </div>
           </ul>
+
         </div>
       </div>
 
@@ -264,15 +308,24 @@ permalink: /engine/
             <h2>UI Systems</h2>
           </div>
           <p>
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum
+            <b>LITTLE ORION ENGINE</b> features a Unity-like UI System, allowing the creation of UI by the use of Canvas.
+            <br><br>
+            All UI elements are placed in the Canvas via a 2D Transform, that allow flexible geometrical transformations in a two dimensional space.
+            <br><br>
+            Also, it eases the implementation of responsive UI via anchor point and pivots.
           </p>
-          <ul>
-            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequa</li>
-            <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</li>
+
+          <ul class="list-group row engine-feature-ul" >
+            <div class="col-sm-6" >
+              <li><i class="ri-check-double-line"></i> Unity-like UI System</li>
+              <li><i class="ri-check-double-line"></i> Anchor Points </li>
+              <li><i class="ri-check-double-line"></i> Pivots </li>
+            </div>
+            <div class="col-sm-6" >
+                <li><i class="ri-check-double-line"></i> UI Masks </li>
+            </div>
           </ul>
+
         </div>
 
         <div class="col-lg-6" data-aos="zoom-in">
