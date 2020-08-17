@@ -16,7 +16,7 @@ Following a bit what was explained in last post, in this one we want to talk abo
 
 ### Ok, so what is this about?
 
-The purpose of the Master's Degree for coders is to know all the aspects of a video game, and to implement them in our own video game.
+The purpose of the Master's Degree for coders is to know all the aspects of a video game, and to implement them in our own.
 
 A common practice in the industry is to build games in top of **Game Engines**. For those who are unfamiliar, a **Game Engine** is just the software that encapsulates different aspects of games like graphics, input, sound, ... And helps developers to build games quickly and efficiently. So, in order to implement our game within Master's duration (1 year) we needed to use a game engine.
 
