@@ -4,6 +4,7 @@ title: The technical challenge
 thumbnail: blog_post-02.jpg
 site_tag: blog
 categories: blog programming
+author: Mario Fernández Villalba
 excerpt_separator: <!--more-->
 ---
 Hey All,

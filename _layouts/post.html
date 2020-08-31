@@ -50,7 +50,42 @@
 
                 </article><!-- End blog entry -->
 
-              </div><!-- End blog entries list -->
+                <div class="blog-author clearfix" data-aos="fade-up">
+                    {% assign author_upper = page.author | upcase %}
+                    {% for team_member in site.data.team %}
+                    {% if team_member.FULL_NAME == author_upper %}
+
+                    <img src="{{ "assets/img/people/" | absolute_url}}{{ team_member.IMG }}" class="rounded-circle float-left" alt="">
+                    <h4 style="margin-top:16px;">{{page.author}}</h4>
+                    <h5>
+                      {{ team_member.ROLE | lowcase | capitalize }}
+                    </h5>
+                    <div class="social-links">
+                      {% if team_member.TWITTER != "none" %}
+                      <a href="https://twitter.com/{{ team_member.TWITTER }}"><i class="icofont-twitter"></i></a>
+                      {% endif %}
+                      {% if team_member.INSTAGRAM != "none" %}
+                      <a href="https://www.instagram.com/{{ team_member.INSTAGRAM }}"><i class="icofont-instagram"></i></a>
+                      {% endif %}
+                      {% if team_member.GIT != "none" %}
+                      <a href="https://github.com/{{ team_member.GIT }}"><i class="bx bxl-github"></i></a>
+                      {% endif %}
+                      {% if team_member.LINKEDIN != "none" %}
+                      <a href="https://www.linkedin.com/in/{{ team_member.LINKEDIN }}"><i class="icofont-linkedin"></i></a>
+                      {% endif %}
+                      {% if team_member.ARTSTATION != "none" %}
+                      <a href="https://www.artstation.com/{{ team_member.ARTSTATION }}/"><i class="fab fa-artstation"></i></a>
+                      {% endif %}
+                      {% if team_member.WEBPAGE != "none" %}
+                      <a href="{{ team_member.WEBPAGE }}"><i class="icofont-user"></i></a>
+                      {% endif %}
+                    </div>
+
+                    {% endif %}
+                    {% endfor %}
+                </div><!-- End blog author bio -->
+
+                </div><!-- End blog entries list -->
 
               {% include blog_sidebar.html %}
 

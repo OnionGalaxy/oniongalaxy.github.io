@@ -4,6 +4,7 @@ title: All these trees are so cool but, what are they for?
 thumbnail: blog_post-03.jpg
 site_tag: blog
 categories: blog programming
+author: Enrique Alexandre González Sequeira
 excerpt_separator: <!--more-->
 ---
 Hey All,

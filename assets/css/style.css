@@ -1827,6 +1827,7 @@ section {
   padding: 20px;
   margin-bottom: 30px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background-color: var(--secondary-bg-color)
 }
 
 .blog .blog-author img {
@@ -1841,8 +1842,17 @@ section {
   padding: 0;
 }
 
+.blog .blog-author h5 {
+  margin-left: 140px;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 0px;
+  padding: 0;
+}
+
 .blog .blog-author .social-links {
-  margin: 0 0 5px 140px;
+  margin: 10px 0 5px 140px;
 }
 
 .blog .blog-author .social-links a {
